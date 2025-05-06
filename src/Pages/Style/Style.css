@@ -1,0 +1,9 @@
+.responsive-hero {
+  background-image: url('../../assets/smHero.jpg');
+}
+
+@media (min-width: 420px) {
+  .responsive-hero {
+    background-image: url('../../assets/Bg.jpg');
+  }
+}

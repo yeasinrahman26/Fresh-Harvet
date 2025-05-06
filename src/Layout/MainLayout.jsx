@@ -1,25 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import Footer from '../Shared/Footer';
-import Navbar from '../Shared/Navbar';
-import Home from '../Pages/home/Home';
-import Product from '../Pages/product/Product'
+
+import Footer from "../Shared/Footer";
+import Navbar from "../Shared/Navbar";
+import Home from "../Pages/home/Home";
+import Product from "../Pages/product/Product";
+import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
-    return (
-      <div>
-        <div className="sticky top-0 z-50  ">
-          <Navbar></Navbar>
-        </div>
-        <div className="max-w-[1440px] mx-auto">
-        <Home></Home>
-        </div>
-        <div className="max-w-[1200px] mx-auto">
-        <Product></Product>
-        </div>
+  return (
+    <div>
+      <div className="absolute  top-0 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[1200px]">
+        <Navbar></Navbar>
+      </div>
+      <div className="min-h-screen">
+        <Outlet></Outlet>
+      </div>
+      <div className="max-w-[1440px] mx-auto">
         <Footer></Footer>
       </div>
-    );
+    </div>
+  );
+  
 };
 
 export default MainLayout;
