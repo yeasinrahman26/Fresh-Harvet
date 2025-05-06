@@ -4,7 +4,7 @@ import React from "react";
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
 import Home from "../Pages/home/Home";
-import Product from "../Pages/product/Product";
+
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {

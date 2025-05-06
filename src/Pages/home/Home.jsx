@@ -1,7 +1,7 @@
 import React from "react";
 import "../Style/Style.css";
 import download from "../../assets/Download App_.png";
-import fresh from "../../assets/Special Offer.png";
+import fresh from "../../assets/Special Offer .jpg";
 import clip from "../../assets/Clip path group.png";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       className="max-w-full min-h-screen  bg-cover bg-center responsive-hero "
     >
       <div className="flex max-w-[1200px] mx-auto">
-        <div className="flex-1 m-2 space-y-5 mt-20 md:mt-32">
+        <div className="md:w-1/2 m-2 space-y-5 mt-20 md:mt-32">
           <h1 className="bg-[#d7e4c8] mb-5 font-semibold text-xl inline-block rounded text-[#749B3F]  px-2">
             Welcome to Fresh Harvest
           </h1>
