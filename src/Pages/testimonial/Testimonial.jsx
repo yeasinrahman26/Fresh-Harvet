@@ -2,7 +2,7 @@ import img from '../../assets/Image (1).png'
 
 const Testimonial = () => {
   return (
-    <div className="min-h-screen space-y-7 text-center ">
+    <div className="space-y-7 text-center ">
       <div>
         <h1 className="bg-[#d7e4c8] mb-5 font-semibold text-xl  inline-block rounded text-[#749B3F]  px-2">
           Testimonial

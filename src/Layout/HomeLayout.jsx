@@ -23,7 +23,15 @@ const HomeLayout = () => {
       </div>
       <div className="max-w-[1200px] mx-auto">
         <Testimonial></Testimonial>
-        <Blog></Blog>
+       
+          
+       
+      </div>
+      <div className="max-w-[1200px] mx-auto">
+    
+       
+          <Blog></Blog>
+       
       </div>
     </div>
   );
