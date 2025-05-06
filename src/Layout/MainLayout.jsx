@@ -16,7 +16,7 @@ const MainLayout = () => {
       <div className="min-h-screen">
         <Outlet></Outlet>
       </div>
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1440px] bg-[#F4F6F6] mx-auto">
         <Footer></Footer>
       </div>
     </div>
