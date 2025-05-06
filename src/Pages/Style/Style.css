@@ -7,3 +7,15 @@
     background-image: url('../../assets/Bg.jpg');
   }
 }
+.responsive-test {
+  background-image: url('../../assets/footersm.png');
+  background-size: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 420px) {
+  .responsive-test {
+    background-image: url('../../assets/FooterSection.png');
+  }
+}
