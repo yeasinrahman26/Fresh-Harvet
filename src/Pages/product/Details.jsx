@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetAllProductsQuery } from "../../Redux/api/productApi";
 import { FaHeart } from "react-icons/fa";
+import Category from "./category";
+
 
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -91,6 +93,10 @@ const ProductDetails = () => {
         <div className="mt-4 p-4 bg-gray-100 rounded-lg text-gray-800">
           <p className="text-gray-500 ">{product.description}</p>
         </div>
+      </div>
+      {/* category product */}
+      <div className="my-20">
+      <Category product={product} ></Category>
       </div>
     </div>
   );
