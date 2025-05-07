@@ -11,14 +11,14 @@ const ScrollLink = ({ to, children }) => {
 
       setTimeout(() => {
         scroller.scrollTo(to, {
-          duration: 200,
+          duration: 500,
           delay: 0,
           smooth: "easeInOutQuart",
         });
       }, 100); // Wait for the home page to render
     } else {
       scroller.scrollTo(to, {
-        duration: 200,
+        duration: 500,
         delay: 0,
         smooth: "easeInOutQuart",
       });

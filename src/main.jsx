@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <HomeLayout></HomeLayout>,
       },
       {
-        path: "ggg",
+        path: "product/:id",
         element: <Details></Details>,
       },
     ],
@@ -27,9 +27,9 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
     <Provider store={store}>
+  <StrictMode>
       <RouterProvider router={router} />
-    </Provider>
   </StrictMode>
+    </Provider>
 );

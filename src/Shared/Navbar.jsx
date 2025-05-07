@@ -66,10 +66,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal  px-1">{links}</ul>
       </div>
       <div className=" hidden md:navbar-end gap-5 ">
-        <button className="hidden md:flex items-center gap-1 justify-center text-white">
+        <button className="hidden md:flex items-center gap-1 justify-center text-gray-300">
           <FaHeart className="text-xl" /> Favorites
         </button>
-        <button className="flex items-center text-white gap-1 justify-center">
+        <button className="flex items-center text-gray-300 gap-1 justify-center">
           <IoCart className="text-xl" /> Cart
         </button>
         <a className="btn bg-[#749b3f] lg:p-5 text-white shadow-none">
