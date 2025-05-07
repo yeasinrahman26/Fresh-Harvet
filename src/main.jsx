@@ -8,6 +8,7 @@ import HomeLayout from "./Layout/Homelayout";
 import Details from "./Pages/product/Details";
 import { Provider } from "react-redux";
 import { store } from "./Redux/store";
+import AuthProvider from "./auth/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -27,9 +28,11 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-    <Provider store={store}>
-  <StrictMode>
-      <RouterProvider router={router} />
-  </StrictMode>
-    </Provider>
+  <Provider store={store}>
+    <AuthProvider>
+      <StrictMode>
+        <RouterProvider router={router} />
+      </StrictMode>
+    </AuthProvider>
+  </Provider>
 );
